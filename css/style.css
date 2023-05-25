@@ -1,0 +1,70 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(16, 15, 15, 0.575) !important;
+}
+
+.box {
+  
+    background-color: rgb(12, 12, 12) !important;
+    border: 2px solid whitesmoke;
+}
+
+table {
+    border-spacing: 20px;
+}
+
+.icon {
+    background-color: rgba(232, 228, 228, 0.693) !important;
+    cursor: pointer;
+}
+
+.number {
+    background-color: rgba(128, 128, 128, 0.335) !important;
+    cursor: pointer;
+}
+#dot {
+    background-color: rgba(128, 128, 128, 0.335) !important;
+    cursor: pointer;
+}
+.delete {
+    background-color: rgba(128, 128, 128, 0.335) !important;
+    cursor: pointer;
+}
+
+.function {
+    background-color: rgb(232, 132, 51);
+    cursor: pointer;
+}
+
+.display-screen {
+    min-height: 10rem;
+    background-color: rgb(195, 206, 206);
+    font-size: 4rem;
+    text-align: end;
+    padding-top: 3.5rem;
+    width: 21.8rem;
+    overflow: auto;
+}
+
+.display-screen:focus {
+    outline: none;
+}
+
+.fun-btn {
+    width: 4.3rem;
+}
+
+@media (min-width: 1400px){
+    .display-screen{
+        min-height: 10rem;
+    }
+    .box {
+        min-height: 40rem;
+        width: 24rem;
+    }
+}
