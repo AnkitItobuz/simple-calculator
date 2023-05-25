@@ -9,7 +9,6 @@ body {
 }
 
 .box {
-  
     background-color: rgb(12, 12, 12) !important;
     border: 2px solid whitesmoke;
 }
@@ -42,12 +41,11 @@ table {
 }
 
 .display-screen {
-    min-height: 10rem;
+    min-height: 5rem;
     background-color: rgb(195, 206, 206);
     font-size: 4rem;
     text-align: end;
     padding-top: 3.5rem;
-    width: 21.8rem;
     overflow: auto;
 }
 
@@ -59,9 +57,11 @@ table {
     width: 4.3rem;
 }
 
-@media (min-width: 1400px){
+@media (min-width: 768px){
     .display-screen{
         min-height: 10rem;
+    width: 21.8rem;
+
     }
     .box {
         min-height: 40rem;
