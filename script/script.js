@@ -55,7 +55,6 @@ deleteItem.addEventListener("click", () => {
 equals.addEventListener("click", () => {
   count = 0;
   number2 = Number(display.innerHTML);
-  console.log(number2);
   if (oper === "+") {
     result = num + number2;
     display.innerHTML = result;
