@@ -61,17 +61,23 @@ equals.addEventListener("click", () => {
     display.innerHTML = result;
     number1 = result;
     number2 = "";
-  } else if (oper === "-") {
+  } 
+  
+  else if (oper === "-") {
     result = num - number2;
     display.innerHTML = result;
     number1 = result;
     number2 = "";
-  } else if (oper === "x") {
+  } 
+  
+  else if (oper === "x") {
     result = num * number2;
     display.innerHTML = result;
     number1 = result;
     number2 = "";
-  } else if (oper === "/") {
+  } 
+  
+  else if (oper === "/") {
     result = num / number2;
     display.innerHTML = result;
     number1 = result;
