@@ -2,7 +2,7 @@ const number = document.querySelectorAll(".number");
 const display = document.getElementById("input-box");
 const clearAll = document.getElementById("clear");
 const deleteItem = document.getElementById("trim");
-const positiveNegativeNumber = document.getElementById( "negative-positive-number");
+const positiveNegativeNumber = document.getElementById("negative-positive-number");
 const operator = document.querySelectorAll("#operator");
 const equals = document.getElementById("equals");
 const percentage = document.getElementById("percentage");
@@ -10,7 +10,7 @@ const dot = document.querySelector("#dot");
 
 let result = 0;
 
-let oper = "";
+let oper ;
 let number1 = 0;
 let number2 = 0;
 let num = 0;
@@ -34,7 +34,7 @@ operator.forEach((Element) => {
   Element.addEventListener("click", () => {
     count = 0;
     num = number1;
-    oper = Element.innerHTML;
+    oper = Element.innerHTML.trim();
     display.innerHTML = "";
   });
 });
@@ -54,34 +54,59 @@ deleteItem.addEventListener("click", () => {
 
 equals.addEventListener("click", () => {
   count = 0;
+  console.log(num);
   number2 = Number(display.innerHTML);
+  console.log(oper);
+  console.log(number2);
+  console.log(typeof(oper));
+
+    console.log(typeof("+"));
+  // console.log((oper.trim() ===  '+'));
   if (oper === "+") {
+
     result = num + number2;
+    console.log(result);
     display.innerHTML = result;
     number1 = result;
     number2 = "";
   } 
   
   else if (oper === "-") {
+    console.log(number2);
+
     result = num - number2;
+    console.log(result);
     display.innerHTML = result;
     number1 = result;
     number2 = "";
   } 
   
   else if (oper === "x") {
+    console.log(number2);
+
     result = num * number2;
+    console.log(result);
+
     display.innerHTML = result;
     number1 = result;
     number2 = "";
   } 
   
   else if (oper === "/") {
+    console.log(number2);
+
     result = num / number2;
+    console.log(result);
+
     display.innerHTML = result;
     number1 = result;
     number2 = "";
+  } 
+
+  else {
+    console.log("Error");
   }
+
 });
 
 percentage.addEventListener("click", () => {
@@ -89,3 +114,4 @@ percentage.addEventListener("click", () => {
   result = number1 / 100;
   display.innerHTML = result;
 });
+
